@@ -1,0 +1,136 @@
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* sheer background */
+  z-index: 999; /* place the background above all other elements */
+}
+
+.modalContainer {
+  width: 400px;
+  min-height: 400px;
+  height: fit-content;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 1000; /* place the modal above the sheer background */
+}
+
+.modalContainer .titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modalContainer .titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+}
+
+.body {
+  flex: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  margin: auto;
+  max-width: 300px;
+}
+
+.modalContainer .body span {
+  align-self: flex-start;
+  text-align: left;
+  margin: 0;
+}
+
+.modalContainer .body ul {
+  width: 300px;
+  list-style-type: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.modalContainer .body ul .devileryCost {
+  color: rgb(154, 147, 147);
+}
+
+.modalContainer .body ul li {
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+
+/* .modalContainer .body ul li:last-child {
+  border-top: 1px solid black;
+  margin-top: 2rem;
+  justify-content: flex-end;
+} */
+
+.modalContainer .body ul {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  /* justify-content: flex-end; */
+}
+
+.modalContainer .body .total {
+  display: flex;
+  align-self: flex-end;
+}
+
+.modalContainer .body > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.modalContainer .body > div:last-child span:last-child {
+  color: rgb(154, 147, 147);
+  padding-top: 10px;
+}
+
+.modalContainer .footer {
+  margin-top: 20px;
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  width: 120px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(50, 135, 50);
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modalContainer .footer button:hover {
+  opacity: 0.8;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}

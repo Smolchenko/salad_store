@@ -1,0 +1,58 @@
+header {
+  position: sticky;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80rem;
+  padding: 0 10rem;
+  margin: auto;
+  border-bottom: 0.5px solid gray;
+  font-family: "Montserrat-Reg";
+  background-color: #fff;
+}
+
+.nav_logo {
+  display: flex;
+  align-items: center;
+  /* prevent the text from wrapping: */
+  white-space: nowrap;
+  width: 150px;
+  font-size: 26px;
+}
+
+.nav_logo_img {
+  width: 150px;
+}
+
+ul.nav_links {
+  display: flex;
+  justify-content: center;
+}
+
+.nav_links li {
+  list-style-type: none;
+  padding-right: 1.5rem;
+}
+
+.nav_links li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav_links li a:hover,
+.nav_links li a.active {
+  color: green;
+  /* color: var(--color-primary-400); TBD */
+}
+
+.nav_links li a:hover {
+  cursor: pointer;
+}
+
+/* @media screen and (max-width: 950px) {
+  TBD
+} */
