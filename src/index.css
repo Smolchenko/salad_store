@@ -1,13 +1,71 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat-Reg";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main > h1 {
+  text-align: center;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 4em;
+}
+
+.order .btn {
+  background-color: #fff;
+  transition: 0.1s background-color linear, 0.1s color linear;
+  border-width: 1px;
+  border-radius: 3px;
+  padding: 21px 54px;
+  font-family: "Montserrat-Reg";
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-weight: 500;
+  color: #707070;
+}
+
+.order .btn:hover {
+  color: #fff;
+  background-color: #707070;
+  cursor: pointer;
+}
+
+.order .btn:disabled {
+  color: lightgray;
+  border-style: dashed;
+  cursor: default;
+}
+
+.order .btn:disabled:hover {
+  background-color: #fff;
+}
+
+.errorMsg {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.back {
+  padding-top: 2rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: Green;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: "Montserrat-Reg";
+  src: local("Montserrat-Reg"),
+    url("./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+  /* font-weight: bold; */
 }

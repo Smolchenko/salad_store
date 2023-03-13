@@ -1,0 +1,41 @@
+.header {
+  background-color: #f7eddb;
+  background-image: url(../../assets/images/mixed-fresh-salad-background.jpeg);
+  background-position-y: -50px;
+  background-size: cover;
+  height: 60vh;
+  white-space: pre-wrap;
+}
+
+.header p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 10vh;
+  font-family: "Montserrat-Reg";
+  font-weight: 400;
+  font-size: 36px;
+  color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  margin: 0 12rem 4em;
+}
+
+.info p {
+  border: 1px solid gray;
+  border-radius: 5px;
+  line-height: 1.5em;
+  padding: 1rem;
+  margin: 0 1em;
+  text-align: center;
+}
+
+.info p span {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2rem;
+}
